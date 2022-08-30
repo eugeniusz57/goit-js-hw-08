@@ -12,8 +12,18 @@
     <p><a href="index.html">Go back</a></p>
 
     <!-- Add gallery items to this list -->
-    <ul class="gallery"></ul>
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input type="email" name="email" autofocus />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
 
-    <script src="js/02-lightbox.js" type="module"></script>
+    <script src="./js/03-feedback.js" type="module"></script>
   </body>
 </html>
