@@ -3,8 +3,6 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 import SimpleLightbox from "simplelightbox";
 
 const divContainer = document.querySelector('.gallery');
-
-
 const makeGaleryMarkup = ({preview, original, description}) => {
     return `
     <a class="gallery__item" href="${original}">

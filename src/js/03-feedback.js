@@ -1,11 +1,6 @@
 import throttle from 'lodash.throttle';
+import { refs } from './03refs'
 
-const refs ={
-    inputEmail: document.querySelector('input'),
-    textArea: document.querySelector('textarea'),
-    submitBtn: document.querySelector("button"),
-    form: document.querySelector(".feedback-form"),
-};
 
 const MESSAGE_KEY = "feedback-form-state";
 const  formData = {};
