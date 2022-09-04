@@ -14,15 +14,4 @@ player.on('timeupdate', throttle(onPlay, 1000));
 const obj = JSON.parse(localStorage.getItem(TIME_KYE));
 const seconds = obj.seconds
 
-player.setCurrentTime(seconds).then(function(seconds) {
-    }).catch(function(error) {
-        switch (error.name) {
-            case 'RangeError':
-                console.log("Error time");
-                break;
-    
-            default:
-                console.log("Enouther Error");
-                break;
-        }
-    });
+player.setCurrentTime(seconds);
