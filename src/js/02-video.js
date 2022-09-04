@@ -12,6 +12,11 @@ const onPlay = function(data) {
 player.on('timeupdate', throttle(onPlay, 1000));
     
 const obj = JSON.parse(localStorage.getItem(TIME_KYE));
-const seconds = obj.seconds
+
+if(!obj){
+    const seconds = 0;
+    return
+}seconds = obj.seconds;
+ 
 
 player.setCurrentTime(seconds);
